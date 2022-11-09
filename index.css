@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    background-image: url("basketball.jpeg");
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    height: auto;
+    background-color: white;
+}
