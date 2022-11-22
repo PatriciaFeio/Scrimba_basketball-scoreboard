@@ -27,8 +27,6 @@ p {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  max-width: 60%;
-  min-width: 250px;
   padding: 68px 83px 38px 83px;
   background-color: #1663e7;
   border: 4px solid white;
@@ -43,17 +41,18 @@ h3 {
 
 .row-results {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-}
-
-.row-results div:first-child {
-  margin-right: 100px;
 }
 
 .home-results,
 .guest-results {
   width: 155px;
   text-align: center;
+}
+
+.home-results {
+  padding-bottom: 30px;
 }
 
 .score {
@@ -115,4 +114,14 @@ h3 {
   border: 2px solid white;
   background-color: #1663e7;
   cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .row-results {
+    flex-direction: row;
+  }
+
+  .row-results div:first-child {
+    margin-right: 100px;
+  }
 }
