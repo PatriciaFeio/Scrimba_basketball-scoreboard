@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row-results">
+        <div class="home-results">
+          <h3>HOME</h3>
+          <div class="score"><p id="score-home">0</p></div>
+          <div id="increment-home" class="row-increment">
+            <button value="1">+1</button><button value="2">+2</button
+            ><button value="3">+3</button>
+          </div>
+        </div>
+        <div class="guest-results">
+          <h3>GUEST</h3>
+          <div class="score">
+            <p id="score-guest">0</p>
+          </div>
+          <div id="increment-guest" class="row-increment">
+            <button value="1">+1</button><button value="2">+2</button
+            ><button value="3">+3</button>
+          </div>
+        </div>
+      </div>
+      <div class="row-new-game">
+        <button id="newGame-btn" class="new-game-btn">New Game</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
